@@ -1,0 +1,18 @@
+# python program to calculate prime numbers
+
+
+def prime_function():
+    start_range = int(input('enter start number: '))
+    end_range = int(input('enter end number: '))
+
+    for n in range(start_range, end_range):
+        if n > 1:
+            for i in range(2, n):
+                if n % i == 0:
+                    print('This is not prime numbers: ', n)
+                    break
+            else:
+                print('This is prime numbers: ', n)
+
+
+prime_function()
